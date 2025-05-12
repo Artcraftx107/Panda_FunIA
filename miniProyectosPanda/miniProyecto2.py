@@ -11,6 +11,8 @@ peliculas['genero'] = np.random.choice(generos, len(peliculas))
 
 #Eliminar ultima columna (vacia)
 peliculas = peliculas.iloc[:, :-1]
+print("\n")
+print(peliculas.info())
 
 #Director unknown si NaN
 peliculas['director'] = peliculas['director'].fillna('Desconocido')
